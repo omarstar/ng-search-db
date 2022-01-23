@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select panelClass="sort-select" [(ngModel)]="sort" (selectionChange)="searchGames(sort)">
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-released">Released</mat-option>
+            <mat-option value="-added">Added</mat-option>
+            <mat-option value="-created">Created</mat-option>
+            <mat-option value="-updated">Updated</mat-option>
+            <mat-option value="-rating">Rating</mat-option>
+            <mat-option value="metacritic">Metacritic</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+<!-- 
+<div class="games">
+    <div class="game">
+        <img src="https://fakeimg.pl/350x200/?text=Hello" alt="thumbnail" class="game-thumbnail" />
+    </div>
+    <div class="game-description">
+        <p class="game-name">Name</p>
+        <div class="game-platforms">
+            <img class="game-platform" src="https://fakeimg.pl/350x200/?text=Hello" alt="slug" />
+        </div>
+    </div>
+</div> -->

@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public sort!: string;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  searchGames(sort: String) {
+    console.log(sort)
+  }
 }
